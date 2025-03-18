@@ -26,7 +26,7 @@ namespace BookStore.Authors
         {
             SetName(name);
             BirthDate = birthDate;
-            ShortBio = shortBio;
+            ShortBio = shortBio ?? "";
         }
         internal Author ChangeName(string name)
         {

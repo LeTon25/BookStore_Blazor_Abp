@@ -79,7 +79,7 @@ namespace BookStore.Authors
             }
 
             author.BirthDate = input.BirthDate;
-            author.ShortBio = input.ShortBio;
+            author.ShortBio = input.ShortBio ?? "";
 
             await _authorRepository.UpdateAsync(author);
         }
